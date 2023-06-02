@@ -52,33 +52,6 @@ class Solution {
             first = first.next;
             index++;
         }
-        
-        // if(size(head) <= 1 || k == 0){
-        //     return head;
-        // }
-        // if(k > size(head)){
-        //     k = k - size(head);
-        //     while(k > size(head)){
-        //         k = k - size(head);
-        //     }
-        // }
-        // int index = size(head) - k;
-        // ListNode current = head;
-        // while(index > 0){
-        //     insert(current.val);
-        //     current = current.next;
-        //     index--;
-        // }
-        // while(current != null){
-        //     if(temp == null){
-        //         temp = tempEnd = new ListNode(current.val);
-        //     }else{
-        //         tempEnd.next = new ListNode(current.val);
-        //         tempEnd = tempEnd.next;
-        //     }
-        //     current = current.next;
-        // }
-        // tempEnd.next = first;
         return temp;
     }
     private int size(ListNode head){

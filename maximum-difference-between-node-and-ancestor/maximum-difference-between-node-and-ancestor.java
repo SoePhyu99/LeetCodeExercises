@@ -18,7 +18,6 @@ class Solution {
         List<Integer> li = new ArrayList<>();
         li = maxAncestorDiff(root, li, 0);
         Collections.sort(li);
-        System.out.println(li);
         return li.get(li.size() - 1);
     }
     private List<Integer> maxAncestorDiff(TreeNode root, List li, int max){

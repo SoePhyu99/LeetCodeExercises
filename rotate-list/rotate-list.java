@@ -28,8 +28,11 @@ class Solution {
         if(size <= 1 || k == 0){
             return head;
         }
-        while(k > size){
+        if(k > size){
             k = k - size;
+            while(k > size){
+                k = k - size;
+            }
         }
         int index = size(head) - k;
         while(head != null){
@@ -41,7 +44,6 @@ class Solution {
             first = first.next;
             index--;
         }
-        System.out.println(first.val);
         while(index < size){
             if(temp == null){
                 temp = tempEnd = new ListNode(first.val);

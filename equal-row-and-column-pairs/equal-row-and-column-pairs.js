@@ -21,7 +21,6 @@ var equalPairs = function(grid) {
             }
         }
     }
-    console.log(rows, column)
     return count;
 };
 

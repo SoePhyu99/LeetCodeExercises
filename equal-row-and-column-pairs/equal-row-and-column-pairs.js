@@ -3,7 +3,6 @@
  * @return {number}
  */
 var equalPairs = function(grid) {
-    let rows = grid
     let column = [];
     for(let i = 0; i< grid.length ;i++){
         column[i] = [];
@@ -14,7 +13,7 @@ var equalPairs = function(grid) {
         }
     }
     let count = 0;
-    for(let e of rows){
+    for(let e of grid){
         for(let i of column){
             if(check(e, i)){
                 count++;

@@ -4,6 +4,9 @@
  * @return {any[]}
  */
 var flat = function (arr, n) {
+    if(n == 0){
+        return arr;
+    }
     while (n > 0) {
         let a = [];
         for (let e of arr) {

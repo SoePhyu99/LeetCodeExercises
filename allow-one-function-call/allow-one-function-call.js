@@ -5,7 +5,7 @@
 var once = function(fn) {
     let count = 0;
     return function(...args){
-        console.log(count++);
+        count++;
         if(count < 2){
             return fn(...args);
         }
